@@ -1,0 +1,92 @@
+
+.cardPro {
+    --background: linear-gradient(to left, #0cdefa 0%, #320370 100%);
+    display: grid;
+    grid-gap: 2px;
+    grid-template-areas: 
+        "image title"
+        "image content";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0,5fr 1fr;
+
+    padding: 5px; 
+    border-radius: 1rem;
+    overflow: visible;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+}
+
+.cardPro::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.8);
+    filter: blur(25px);
+    background: var(--background);
+    z-index: -1;
+    transition: opacity 0.5s;
+}
+
+.cardPro:hover::after {
+    opacity: 0;
+}
+
+/* Card info styling */
+.card-info {
+    --color: #000000;
+    background: var(--color);
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    text-align: justify;    
+    padding: 5px;
+    align-items: center;
+    overflow: visible;
+    border-radius: 0.7rem;
+    transition: color 0.5s;
+}
+
+.cardPro:hover .card-info {
+    color: #45c7e7;
+    transition: color 1s;
+}
+
+/* Title styling */
+.cardPro .tituloCard {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #ffffff; 
+    font-size: 1.2rem;
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cardPro .contentidoCard {
+    font-weight: bold;
+    text-align: justify;
+    color: #ffffff; 
+    font-size: 0.9rem;
+    grid-area: content;
+    display: flex;
+    align-items: center;
+}
+
+.cardPro .imagenCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden; 
+    grid-area: image;
+}

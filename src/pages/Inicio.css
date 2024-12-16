@@ -1,0 +1,15 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.contenedor h1 {
+    color: cadetblue;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 2px solid rgb(16, 16, 17); 
+    text-align: center;
+}

@@ -1,0 +1,43 @@
+.containerHis {
+    background-color: antiquewhite;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-areas: 
+        "tituloHis carruselHis"
+        "parrafoHis carruselHis"
+        "acordionHis parrafo2His";
+    place-items: center; 
+    gap: 10px;
+}
+
+.containerHis .tituloHis {
+    grid-area: tituloHis;
+    display: flex;
+}
+
+.containerHis .carruselHis {
+    grid-area: carruselHis;
+    display: flex;
+}
+
+.containerHis .parrafoHis {
+    grid-area: parrafoHis;
+    display: flex;
+}
+
+.containerHis .acordionHis {
+    grid-area: acordionHis;
+    display: flex;
+}
+
+.containerHis .parrafo2His {
+    grid-area: parrafo2His;
+    display: flex;
+}
+.containerHis p{
+    text-align:justify;
+}

@@ -1,0 +1,36 @@
+.containerJava{
+    display: grid;
+    margin: 5px;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr;
+    grid-template-areas: "informacionJava informacionJava"
+                         "titulo1 titulo2"
+                         "tabla1 tabla2";
+}
+.containerJava .informacionJava{
+    display: flex;
+    grid-area: informacionJava;
+}
+.containerJava .titulo1{
+    display: flex;
+    grid-area: titulo1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.containerJava .titulo2{
+    display: flex;
+    grid-area: titulo2;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.containerJava .tabla1{
+    display: flex;
+    grid-area: tabla1;
+}
+.containerJava .tabla2{
+    display: flex;
+    grid-area: tabla2;
+}

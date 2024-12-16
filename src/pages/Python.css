@@ -1,0 +1,36 @@
+.containerPython{
+    display: grid;
+    margin: 5px;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr;
+    grid-template-areas: "informacionPython informacionPython"
+                         "titulo1P titulo2P"
+                         "tabla1P tabla2P";
+}
+.containerPython .informacionPython{
+    display: flex;
+    grid-area: informacionPython;
+}
+.containerPython .titulo1P{
+    display: flex;
+    grid-area: titulo1P;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.containerPython .titulo2P{
+    display: flex;
+    grid-area: titulo2P;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.containerPython .tabla1P{
+    display: flex;
+    grid-area: tabla1P;
+}
+.containerPython .tabla2P{
+    display: flex;
+    grid-area: tabla2P;
+}
